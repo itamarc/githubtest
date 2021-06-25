@@ -15,6 +15,8 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+    - name: Checkout
+      uses: actions/checkout@v2
     - name: Running my action for testing
       id: publishpages
       uses: itamarc/action-itemplate-ghpages@v1test
