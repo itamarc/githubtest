@@ -1,4 +1,4 @@
-# This is a template
+# This is a template in Markdown
 
 This file was created to test action-itemplate-ghpages.
 
@@ -9,3 +9,4 @@ This repository is owned by:
 [[# GITHUB_REPOSITORY_OWNER #]]([# GITHUB_SERVER_URL #]/[# GITHUB_REPOSITORY_OWNER #])
 
 Last updated: [# TMPL_LASTUPDATE #]
+
