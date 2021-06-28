@@ -1,5 +1,4 @@
 # This is a basic workflow that is manually triggered
-
 name: Manual workflow to test my action
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
@@ -27,7 +26,8 @@ jobs:
         templates_folder: 'docs/templates'
         pages_branch: 'gh-pages'
         pages_folder: 'docs'
-        snippets_folder: 'docs/templates/snippets'
+        snippets_folder: 'docs/snippets'
+        timezone: 'America/Sao_Paulo'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
