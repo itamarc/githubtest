@@ -16,12 +16,18 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
+      with:
+        # The branch where the templates are stored
+        # (if not present, uses the default branch)
+        ref: gh-pages
     - name: Running my action for testing
       id: publishpages
       uses: itamarc/action-itemplate-ghpages@v1test
       with:
-        templates_branch: 'master'
         templates_folder: 'docs/templates'
         pages_branch: 'gh-pages'
         pages_folder: 'docs'
         snippets_folder: 'docs/templates/snippets'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
