@@ -28,6 +28,7 @@ jobs:
         pages_folder: 'docs'
         snippets_folder: 'docs/snippets'
         timezone: 'America/Sao_Paulo'
+        allow_templates_subfolders: 'true'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
