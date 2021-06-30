@@ -23,10 +23,10 @@ jobs:
       id: publishpages
       uses: itamarc/action-itemplate-ghpages@v1test
       with:
-        templates_folder: 'docs/templates'
+        templates_folder: 'templates'
         pages_branch: 'gh-pages'
         pages_folder: 'docs'
-        snippets_folder: 'docs/snippets'
+        snippets_folder: 'snippets'
         timezone: 'America/Sao_Paulo'
         allow_templates_subfolders: 'true'
       env:
