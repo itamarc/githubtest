@@ -1,22 +1,45 @@
 <html>
-<head><title>[# GITHUB_REPOSITORY #]</title></head>
+<head>
+    <title>[# GITHUB_REPOSITORY #]</title>
+    <link rel="stylesheet" href="light.css">
+    <script src="templatesets.js"></script>
+</head>
 <body>
 
-<h1>This is a file generated from a template in HTML</h1>
+<h1>[# GITHUB_REPOSITORY #]</h1>
 
-<p>This file was created to test itamarc/action-itemplate-ghpages.
+<h2>Description</h2>
 
-<p>This repository, according to GITHUB environment variables, is: <a href="[# GITHUB_SERVER_URL #]/[# GITHUB_REPOSITORY #]">[# GITHUB_REPOSITORY #]</a>
+<div class="description">[# repository_description #]</div>
 
-<p>This repository is owned by (code from a snippet):</p>
-[# SNP_OWNER_DIV #]
+<div class="ownedby">
+<h2>Owned by</h2>
 
-<p>This <a href="subdir1/index.html">other file</a> exists to test the templates subdir feature.</p>
+<div class="owner">
+    <a href="[# repository_owner_url #]"><img src="[# repository_owner_avatarUrl #]" height="80px" width="80px" style="vertical-align: middle; border: 0;">[# repository_owner_login #]</a>
+</div>
+</div>
 
-<p>This <a href="indexmd.html">other file</a> exists to test the markdown process feature.</p>
+<h2>History</h2>
 
-<p>[# SNP_LICENSE #]</p>
+This repository was created at [# repository_createdAt #] and was last updated at [# repository_updatedAt #].
 
+It was starred [# repository_stargazerCount #] times, have [# repository_watchers_totalCount #] watchers and was forked [# repository_forkCount #] times.
+
+<h2>Content</h2>
+
+<div id="languages"></div>
+<script>languagesDiv([# repository_languages #], [# repository_languages_totalSize #])</script>
+
+<div id="topics"></div>
+<script lang="javascript">topicsDiv([# repository_repositoryTopics #])</script>
+
+<h2>Licence</h2>
+
+<p>This repository contents are under: <a href="[# repository_licenseInfo_url #]">[# repository_licenseInfo_name #]</a></p>
+
+<div class="footer">
 <p><small>Last updated: [# TMPL_LASTUPDATE #]</small>
-
+<p><verysmall>Created automatically using <a href="[# GITHUB_SERVER_URL #]/itamarc/action-itemplate-ghpages">itamarc/action-itemplate-ghpages</a>.</verysmall></p>
+</div>
 </body></html>
