@@ -22,4 +22,13 @@ div.owner {
 }
 div.footer {
     text-align: center;
+    border-top: 2px dashed steelblue;
+    width: 70%;
+    margin: auto;
+}
+p.actionmkt {
+    font-size: x-small;
+}
+p.lastupd {
+    font-size: small;
 }

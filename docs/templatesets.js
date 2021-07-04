@@ -1,8 +1,5 @@
 // repository_languages
-// [{"color":"#b07219","size":21140,"name":"Java"},
-// {"color":"#427819","size":145,"name":"Makefile"},
-// {"color":"#e34c26","size":2333,"name":"HTML"}]
-// repository_languages_totalSize=23618
+// repository_languages_totalSize
 function languagesDiv(languages, langTotalSize) {
     if (languages.length != 0) {
         let langDiv = ""
@@ -11,7 +8,8 @@ function languagesDiv(languages, langTotalSize) {
         } else {
             langDiv += "This repository have code written in:<br><ul>\n"
         }
-        for (const lang in languages) {
+        for (let i = 0; i < languages.length; i++) {
+            const lang = languages[i];
             langDiv += "<li>" + lang.name
             if (languages.length > 1) {
                 langDiv += " (" + Math.round(lang.size/langTotalSize*1000)/10 + "%)"
@@ -23,10 +21,6 @@ function languagesDiv(languages, langTotalSize) {
 }
 
 // repository_repositoryTopics
-// [{"name":"java","url":"https://github.com/topics/java"},
-// {"name":"library","url":"https://github.com/topics/library"},
-// {"name":"templates","url":"https://github.com/topics/templates"},
-// {"name":"text","url":"https://github.com/topics/text"}]
 function topicsDiv(topics) {
     if (topics.length != 0) {
         let topicsDiv = ""
@@ -35,7 +29,8 @@ function topicsDiv(topics) {
         } else {
             topicsDiv += "Topic:<br><ul>\n"
         }
-        for (const topic in topics) {
+        for (let i = 0; i < topics.length; i++) {
+            const topic = topics[i];
             topicsDiv += '<li><a href="' + topic.url + '">' + topic.name + '</a>'
         }
         topicsDiv += "\n</ul>"
