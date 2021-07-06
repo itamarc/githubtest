@@ -1,70 +1,82 @@
-<html>
-<head>
-    <title>itamarc/githubtest</title>
-    <link rel="stylesheet" href="reference.css">
-    <script lang="javascript" src="templatesets.js"></script>
-</head>
-<body>
-<!-- action-itemplate-ghpages: This is the reference template set. It's supposed to use all available keys. -->
-<h1>itamarc/githubtest</h1>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<p>Homepage: <a href="https://itamarc.github.io/githubtest/">https://itamarc.github.io/githubtest/</a></p>
-<p>Repository URL: <a href="https://github.com/itamarc/githubtest">https://github.com/itamarc/githubtest</a></p>
-
-<p id="readme"></p>
-<script lang="javascript">readmeAsP('true')</script>
-
-<div class="description">
-<h2>Description</h2>
-Repository to test GitHub functionality.</div>
+        <title>itamarc/githubtest</title>
+        <link rel="stylesheet" href="light.css">
+        <script language="javascript" src="templatesets.js"></script>
+    </head>
+    <body>
+    <!-- action-itemplate-ghpages: This is the reference template set. It's supposed to use all available keys. -->
+    <h1>itamarc/githubtest</h1>
     
-<div class="ownedby">
-<h2>Owned by</h2>
-<div class="owner">
-    <a href="https://github.com/itamarc"><img src="https://avatars.githubusercontent.com/u/19577272?u=2bf4a3411aae650b4a5ac645845ae87ddbaad593&v=4"><br>
-    itamarc</a>
-</div>
-</div>
+    <p>Homepage: <a href="https://itamarc.github.io/githubtest/">https://itamarc.github.io/githubtest/</a></p>
+    <p>Repository URL: <a href="https://github.com/itamarc/githubtest">https://github.com/itamarc/githubtest</a></p>
+    
+    <p id="readme"></p>
+    <script lang="javascript">readmeAsP('true')</script>
 
-<div id="collaborators"></div>
-<script lang="javascript">collaboratorsAsUL([{"name":"Itamar Carvalho","login":"itamarc","url":"https://github.com/itamarc"}])</script>
+    <div class="description container">
+    <h2>Description</h2>
+    Repository to test GitHub functionality.</div>
+        
+    <div class="ownedby container">
+    <h2>Owned by</h2>
+    <div class="owner">
+        <a href="https://github.com/itamarc"><img src="https://avatars.githubusercontent.com/u/19577272?u=2bf4a3411aae650b4a5ac645845ae87ddbaad593&v=4" alt="owner" title="Owner" width="50px" height="50px"><br>
+        itamarc</a>
+    </div>
+    </div>
+    
+    <div id="collaborators" class="container"></div>
+    <script language="javascript">collaboratorsAsUL([{"name":"Itamar Carvalho","login":"itamarc","url":"https://github.com/itamarc"}])</script>
+    
+    <div class="container">
+        <h2>History</h2>
+        
+        <p>This repository was created at 2021-06-13T19:54:12Z and was last updated at 2021-07-06T23:16:58Z.</p>
+        
+        <p>It was starred 1 times, have 1 watchers and was forked 0 times.</p>
+    </div>
+    
+    <div id="issues" class="container"></div>
+    <script language="javascript">issuesAsSPAN([{"number":4,"createdAt":"2021-07-03T13:36:19Z","comments_totalCount":0,"author":{"login":"itamarc","url":"https://github.com/itamarc"},"titleHTML":"Test issue 1 with enhancement","url":"https://github.com/itamarc/githubtest/issues/4"},{"number":5,"createdAt":"2021-07-03T13:37:31Z","comments_totalCount":0,"author":{"login":"itamarc","url":"https://github.com/itamarc"},"titleHTML":"Test issue 2 with a bug","url":"https://github.com/itamarc/githubtest/issues/5"}])</script>
+    
+    <div id="latestRelease" class="container"></div>
+    <script language="javascript">latestReleaseAsUL(
+        'Fake release to test my action',
+        'This is a fake release. I have nothing to release, but I want to test an action with a release in this repository.',
+        'v1test',
+        '2021-07-03T20:32:55Z',
+        'false',
+        'https://github.com/itamarc/githubtest/releases/tag/v1test',
+        'itamarc',
+        'Itamar Carvalho')
+    </script>
+    
+    <div class="container">
+        <h2>Content</h2>
+        
+        <div id="languages"></div>
+        <script>languagesAsUL([{"color":"#3572A5","size":106,"name":"Python"}], 106)</script>
+        
+        <div id="topics"></div>
+        <script language="javascript">topicsAsUL([{"name":"github","url":"https://github.com/topics/github"},{"name":"testing","url":"https://github.com/topics/testing"},{"name":"repository","url":"https://github.com/topics/repository"}])</script>
+    </div>
 
-<h2>History</h2>
+    <div class="container" id="license">
+        <h2>License</h2>
+        <p>This repository contents are under: <a href="http://choosealicense.com/licenses/gpl-3.0/">GNU General Public License v3.0</a></p>
+        <SPAN id="licenceConditions"></SPAN>
+        <script language="javascript">licenseCondAsUL(["License and copyright notice","State changes","Disclose source","Same license"])</script>
+    </div>
 
-<p>This repository was created at 2021-06-13T19:54:12Z and was last updated at 2021-07-06T22:13:54Z.</p>
-
-<p>It was starred 1 times, have 1 watchers and was forked 0 times.</p>
-
-<div id="issues"></div>
-<script lang="javascript">issuesAsSPAN([{"number":4,"createdAt":"2021-07-03T13:36:19Z","comments_totalCount":0,"author":{"login":"itamarc","url":"https://github.com/itamarc"},"titleHTML":"Test issue 1 with enhancement","url":"https://github.com/itamarc/githubtest/issues/4"},{"number":5,"createdAt":"2021-07-03T13:37:31Z","comments_totalCount":0,"author":{"login":"itamarc","url":"https://github.com/itamarc"},"titleHTML":"Test issue 2 with a bug","url":"https://github.com/itamarc/githubtest/issues/5"}])</script>
-
-<div id="latestRelease"></div>
-<script lang="javascript">latestReleaseAsUL(
-    'Fake release to test my action',
-    'This is a fake release. I have nothing to release, but I want to test an action with a release in this repository.',
-    'v1test',
-    '2021-07-03T20:32:55Z',
-    'false',
-    'https://github.com/itamarc/githubtest/releases/tag/v1test',
-    'itamarc',
-    'Itamar Carvalho')
-</script>
-
-<h2>Content</h2>
-
-<div id="languages"></div>
-<script>languagesAsUL([{"color":"#3572A5","size":106,"name":"Python"}], 106)</script>
-
-<div id="topics"></div>
-<script lang="javascript">topicsAsUL([{"name":"github","url":"https://github.com/topics/github"},{"name":"testing","url":"https://github.com/topics/testing"},{"name":"repository","url":"https://github.com/topics/repository"}])</script>
-
-<h2>License</h2>
-<p>This repository contents are under: <a href="http://choosealicense.com/licenses/gpl-3.0/">GNU General Public License v3.0</a></p>
-<SPAN id="licenceConditions"></SPAN>
-<script lang="javascript">licenseCondAsUL(["License and copyright notice","State changes","Disclose source","Same license"])</script>
-
-<div class="footer">
-<p class="lastupd">Last updated: 2021-07-06 19:22:37</p>
-<p class="actionmkt">Created automatically using <a href="https://github.com/itamarc/action-itemplate-ghpages" target="_blank">itamarc/action-itemplate-ghpages</a>. Templates set: 'reference'.</p>
-</div>
-</body></html>
+    <div class="footer">
+    <p class="lastupd">Last updated: 2021-07-06 20:18:02</p>
+    <p class="actionmkt">Created automatically using <a href="https://github.com/itamarc/action-itemplate-ghpages" target="_blank">itamarc/action-itemplate-ghpages</a>.
+        Templates set: 'light'.</p>
+    </div>
+    </body></html>
+    
