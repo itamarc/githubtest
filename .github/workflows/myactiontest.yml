@@ -15,7 +15,7 @@ jobs:
       id: publishpages
       uses: itamarc/action-itemplate-ghpages@v1test
       with:
-        templates_folder: ':reference:'
+        templates_folder: ':light:'
         pages_branch: 'gh-pages'
         pages_folder: 'docs'
         snippets_folder: 'snippets'
