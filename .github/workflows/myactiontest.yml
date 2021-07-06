@@ -21,6 +21,6 @@ jobs:
         snippets_folder: 'snippets'
         timezone: 'America/Sao_Paulo'
         allow_templates_subfolders: 'true'
+        publish_readme_md: 'true'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
