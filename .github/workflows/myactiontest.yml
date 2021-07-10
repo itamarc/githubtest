@@ -22,5 +22,6 @@ jobs:
         timezone: 'America/Sao_Paulo'
         allow_templates_subfolders: 'true'
         publish_readme_md: 'true'
+        log_level: 'FINER'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
