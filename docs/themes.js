@@ -39,7 +39,7 @@ function topicsAsSPAN(topics) {
         }
         for (let i = 0; i < topics.length; i++) {
             const topic = topics[i]
-            topicsDiv += '<span><a href="' + topic.url + '">' + topic.name + '</a></span>'
+            topicsDiv += '<span class="button"><a href="' + topic.url + '">' + topic.name + '</a></span>'
         }
         topicsDiv += "\n</div>"
         document.getElementById("topics").innerHTML = topicsDiv
@@ -126,7 +126,7 @@ function licenseCondAsUL(conditions) {
             licCondUl += '<LI>' + conditions[i] + '\n'
         }
         licCondUl += "</UL>\n"
-        document.getElementById("licenceConditions").innerHTML = licCondUl
+        document.getElementById("licenseConditions").innerHTML = licCondUl
     }
 }
 
@@ -138,5 +138,17 @@ function readmePublished(publishReadme) {
     }
     if (publishReadme != 'inline') {
         document.getElementById("readme_inline").hidden = true
+    }
+}
+
+function setSmalldivHeight() {
+    if (screen.width > 768) {
+        var bigheight = document.getElementById("bigdiv").offsetHeight;
+        var smlheight = document.getElementById("smalldiv").offsetHeight;
+        if (bigheight > smlheight) {
+            document.getElementById("smalldiv").style.height = bigheight + "px";
+            document.getElementById("license").style.position = "absolute";
+            document.getElementById("license").style.bottom = "0";
+        }
     }
 }
