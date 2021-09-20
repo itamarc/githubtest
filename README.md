@@ -7,7 +7,7 @@ A repository to test GitHub functionalities.
 This readme file was updated manually in master branch only.
 To copy to gh-pages branch (in order to be published in GH Pages) the `planetoftheweb/copy-to-branch` action was used.
 
-I'want to test if a link with an custom head id works in GitHub and also in my generated HTML file, so this is the link to [useful forms and symbols](#useful-symbols) section.
+Since a link with an custom head id doesn't work in GitHub and also in my generated HTML file, I'll use the standard auto generated link, and so this is the link to [useful forms and symbols](#useful-forms-and-symbols) section.
 
 This is only for filling space and push the section below...
 
@@ -23,6 +23,6 @@ This is only for filling space and push the section below...
 
 Let's test if SVG files shows correctly in GH Pages:
 
-## Useful forms and symbols {#useful-symbols}
+## Useful forms and symbols
 
 ![useful forms and symbols](https://itamarc.github.io/githubtest/images/useful-forms-and-symbols.svg "Useful Forms and Symbols")
