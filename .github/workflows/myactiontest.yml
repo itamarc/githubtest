@@ -1,4 +1,4 @@
-name: Manual workflow to test my action
+name: Pages generation for action showcase
 
 on:
   # Trigger on page_build, as well as release, fork, push, watch and issues events
@@ -41,9 +41,9 @@ jobs:
         ref: gh-pages
     - name: Running my action for testing
       id: publishpages
-      uses: itamarc/action-itemplate-ghpages@v1test
+      uses: itamarc/action-itemplate-ghpages@v1
       with:
-        templates_folder: ':light:'
+        templates_folder: ':greenscreen:'
         pages_branch: 'gh-pages'
         pages_folder: 'docs'
         snippets_folder: 'snippets'
